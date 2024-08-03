@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic form field</title>
+  <link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+  <body>
+    <input type="checkbox" id="darkmode"/>
+    <label for="darkmode"></label>
+    <div class="back"> </div>
+    <h1>Dynamic Form Fields</h1>
+    <h2>Add New Member</h2>
+    <div class="container">
+      <form>
+      <div id="formfield">
+        <input type="text" name="text" class="text" size="50" placeholder="Name" required>
+        <input type="text" name="text" class="Email" size="50" placeholder="Email" required>
+        <input type="text" name="text" class="text" size="50" placeholder="Address" required>
+      </div>
+      <div class="submit">
+      <input name="submit" type="Submit" value="Submit" onclick="openPopup()">
+      <div class="poppup" id="poppup">
+        <img src="check.png">
+        <h2>Thank You!</h2>
+        <h3>Your details has been successfully submitted</h3>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    </form>
+      <div class="controls">
+        <button class="add" onclick="add()"><i class="fa fa-plus"></i>Add</button>
+        <button class="remove" onclick="remove()"><i class="fa fa-minus"></i>Remove</button>
+      </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
